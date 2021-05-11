@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/den.css">
+	<title>My Task List</title>
+</head>
+
+<body>
+	
+		<div class="container p-3">	
+		<h1 class="app-title" id="header">To Do App</h1>	
+		<div class="card">
+			<div class="card-header">
+				New Task
+			</div>
+			<div class="card-body">
+				<form id="addTaskForm">	
+					<div class="input-group mb-3">
+						<input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="Type a new task" aria-describedby="btnAddNewTask">
+						<div class="input-group-append">
+							<button class="btn btn-primary" type="submit" id="btnAddNewTask">
+								<i class="fas fa-plus"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="card mt-3">
+			<div class="card-header">
+				Task List
+				    <a id="btnDeleteAll" href="#" class="btn btn-outline-danger btn-sm delete-all float-right">	
+						Delete All
+					</a>
+			</div>
+
+			<ul id="task-list" class="list-group">
+			
+			</ul>
+
+		</div>
+
+
+
+	<!--Table code-->
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Ürün Adı</th>
+				<th scope="col">Ürün Adedi/Kg</th>
+				<th scope="col">Ürün Fiyatı</th>
+				<th scope="col">Ekle</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td  class="nameC">Alçı</td>
+				<td>30</td>
+				<td>19</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Sıva</td>
+				<td>200</td>
+				<td>25</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>İç cepe boya</td>
+				<td>75</td>
+				<td>22</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">4</th>
+				<td>Tuğla</td>
+				<td>100</td>
+				<td>45</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">5</th>
+				<td>Beton</td>
+				<td>25</td>
+				<td>150</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">6</th>
+				<td>Gaz beton</td>
+				<td>56</td>
+				<td>60</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">7</th>
+				<td>Duvar Seramik</td>
+				<td>38</td>
+				<td>70</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">8</th>
+				<td>Duvar kağıt </td>
+				<td>1</td>
+				<td>85</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">9</th>
+				<td>Şap</td>
+				<td>4</td>
+				<td>22</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">10</th>
+				<td>Parke</td>
+				<td>26</td>
+				<td>65</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">11</th>
+				<td>Zemin seramik</td>
+				<td>75</td>
+				<td>96</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">12</th>
+				<td>Granit</td>
+				<td>58</td>
+				<td>105</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">13</th>
+				<td>Alçı pan</td>
+				<td>25</td>
+				<td>75</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">14</th>
+				<td>Alçı sıva</td>
+				<td>75</td>
+				<td>35</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">15</th>
+				<td>Taş yünü</td>
+				<td>10</td>
+				<td>70</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">16</th>
+				<td>Boya</td>
+				<td>75</td>
+				<td>22</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr><tr>
+				<th scope="row">17</th>
+				<td>Pvc lambiri</td>
+				<td>5</td>
+				<td>35</td>
+				<td><button class="btn btn-primary" type="submit" id="btnAddNewTask"><i class="fas fa-plus"></i></button></td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	</div>
+	
+
+
+
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
